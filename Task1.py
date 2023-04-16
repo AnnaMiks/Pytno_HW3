@@ -7,3 +7,15 @@
 #     1 2 3 4 5
 #     3
 #     -> 1
+
+
+from random import randint
+n = int(input("Введите количество элементов в массиве: "))
+a=[randint (1,10) for i in range(n)]
+print(a)
+x = int(input("Какое число найти: "))
+count = 0
+for i in a:
+    if i == x:
+        count +=1
+print("Число встречается ", count, "раз")
